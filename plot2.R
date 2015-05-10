@@ -1,4 +1,4 @@
-## This function reads in the required data and generates the first plot
+## This function reads in the required data and generates the second plot (Global active power over time)
 
 plot2 <- function (){ 
     
@@ -28,7 +28,7 @@ plot2 <- function (){
     ##?line https://class.coursera.org/exdata-014/forum/thread?thread_id=13
     par(bg = 'white')
     
-    ## plot the line graph, add the x-axis tickmarks + labels, and then output the file
+    ## plot the line graph and then output the file
     plot(x = plotData$datetime, y = plotData$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)",  xlab = "")
     
     ## Since this function doesn't return any meaningful information, make the output invisible.
